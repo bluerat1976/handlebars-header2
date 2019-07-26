@@ -5,3 +5,24 @@ body {
 .nav-header {
     margin: 10px;
 }
+
+.nav-header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #a79601;
+    font-weight: bold;
+    font-size: 18px;
+   text-decoration: none;
+}
+.nav-header:hover {
+    color: rgb(201, 15, 15);
+    font-weight: bolder;
+
+
+}
+
+.main-page .link-index,
+.services .link-services,
+.aboutus .link-about-us {
+    text-decoration: underline;
+    color: rgb(4, 113, 214);
+}
