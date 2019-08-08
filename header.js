@@ -1,5 +1,6 @@
-var headerblock = document.getElementById('header-template').innerHTML;
-var template = Handlebars.compile(headerblock);
+
+var headerblock = document.getElementById('header-1').innerHTML;
+var templateHeader = Handlebars.compile(headerblock);
 var linksData = template({
     data: [
         {
@@ -21,14 +22,11 @@ var linksData = template({
     ]
 });
 
-document.getElementById('header-1').innerHTML += linksData;
+document.getElementById('header').innerHTML += linksData;
 
-Handlebars.registerHelper('isActive', function(element, options){
-    if($(element).hasClass('active')){
-         return options.fn(this);
-    }
-    return options.inverse(this);
-  });
+
+
+
 
 
 

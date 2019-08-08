@@ -8,29 +8,24 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./handlebars-v4.1.2.js"></script>
     <script src="./header.js" defer></script>
-   
+
 </head>
 
 <body class='main-page'>
     <div>
         <h2>Handlebars learning - 2</h2>
-        <h3>Handlebars is working</h3>
+        <h3>Handlebars is not working</h3>
     </div>
+
     <hr>
     <header id="header-1">
-        
+        <script id='header' type="text/x-handlebars-template">
+        {{#each data}}
+        <a class="nav-header" href="{{this.href}}"> {{this.link}}</a>
+        {{/each}}
+        </script>
     </header>
     <hr>
-
-    <script id="header-template" type="text/x-handlebars-template">
-            {{#each data}}
-                <a class="nav-header" href="{{this.href}}"> {{#isActive this}}{{this.link}}{{/isActive}}</a>
-            {{/each}}
-    </script>
-
-    <script type="text/javascript">
-       
-    </script>
 
 </body>
 
